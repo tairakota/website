@@ -1,0 +1,94 @@
+body {
+  background-image: url("paint/mujihaikei.png");
+  background-attachment:fixed;
+}
+
+.title {
+  opacity: 1; /* 要素を透明にする */
+  animation-name: slide-in-fade-in; /* 使用するアニメーション名を指定 */
+  animation-duration: 2s; /* アニメーションの実行時間を指定 */
+}
+@keyframes slide-in-fade-in {
+  from {
+      transform: translateX(-10%);
+      opacity: 0;
+  } /* 透明度を0から開始 */
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  } /* 透明度を1まで徐々に上げる */
+}
+
+.career {
+  background: linear-gradient(to right, rgba(0, 255, 255, 1), rgba(255, 255, 255, 0) );
+  width:500px;
+  margin-top:-8px;
+  margin-left:-8px;
+  font-family:"Clarimo UD PE Light";
+  font-size:70px;
+  border-bottom:2px solid #5c8aff;
+}
+
+.welcome {
+  font-family:"Futo Min A101 JIS2004 AP";
+  font-size:20px;
+}
+
+.rireki {
+  font-size:45px;
+  line-height:1.7;
+  display:flex;
+  flex-direction:column;
+  margin: 40px 0px;
+  padding: 20px 0px 20px 50px;
+}
+
+.kitai {
+  font-size:30px;
+  display:flex;
+  justify-content:flex-end;
+  padding-right: 70px;
+}
+
+.menu-btn {
+  position: fixed;
+  top:30px;
+  right: 30px;
+}
+
+.button {
+width:50px;
+height:50px;
+border:2px solid blue;
+border-radius:50%;
+}
+
+#menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: #f9f9f9;
+  padding: 10px;
+  list-style-type: none;
+  border: 1px solid #ddd;
+}
+
+#menu li {
+  padding: 5px;
+  cursor: pointer;
+}
+
+#menu li:hover {
+  background-color: #ddd;
+}
+
+.top {
+  position:fixed;
+  top:30px;
+  right:120px;
+  width:50px;
+  height:50px;
+  border:2px solid blue;
+  border-radius:50%;
+}
